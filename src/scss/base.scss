@@ -15,6 +15,14 @@ h4, h5 {
   @apply text-xl;
 }
 
+span {
+  @apply font-body;
+}
+
 p {
   @apply font-body text-gray-800 leading-relaxed mb-2;
+}
+
+hr {
+  @apply border-t-4 border-gray-200;
 }

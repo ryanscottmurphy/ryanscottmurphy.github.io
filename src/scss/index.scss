@@ -75,7 +75,59 @@
 }
 
 footer {
-  h2, p, span {
+  h2, p, span, a {
     @apply text-white;
+  }
+
+  a:hover span {
+    @apply text-red-400;
+  }
+}
+
+
+.content-page .article {
+  img {
+    @apply mx-auto my-8;
+  }
+
+  blockquote {
+    @apply font-body my-8 p-8 border-l-8 border-red-300;
+    p {
+      @apply italic text-lg text-gray-900;
+    }
+    footer {
+      @apply text-gray-800;
+    }
+  }
+
+  ul, ol {
+    @apply my-4;
+
+    li {
+      @apply font-body text-gray-800 pl-6;
+
+      &:before {
+        @apply inline-block text-red-500 font-display font-bold;
+        text-indent: -24px;
+      }
+    }
+  }
+
+  ul {
+    li {
+      &:before {
+        content: "\2022";
+      }
+    }
+  }
+
+  ol {
+    counter-reset: section;
+    li {
+      counter-increment: section;
+      &:before {
+        content: counter(section);
+      }
+    }
   }
 }
