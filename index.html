@@ -3,50 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 </head>
-<body>
+<body class="bg-gray-200">
+<div class="wrapper bg-white mx-auto">
 
-<div class="container">
-
-    <div class="row">
-        <div class="col">
-            <h1>Game Developer and Programmer</h1>
-        </div>
+    <div class="py-16 text-center">
+        <h1 class="text-red-600 mb-0 font-bold">Ryan Scott Murphy</h1>
+        <h2 class="text-gray-700 font-body text-base">Game Developer and Programmer</h2>
     </div>
 
-    <div class="row">
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JHzjAvZIPA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+    <div class="video">
+        <iframe class="absolute w-full h-full"
+                src="https://www.youtube.com/embed/JHzjAvZIPA0?rel=0&controls=0&modestbranding=1"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
     </div>
 
-    <div class="row">
-        <div class="col col-6">
-            <h2>Hi. I’m Ryan,</h2>
+    <div class="container mx-auto">
+        <div class="flex py-16">
+            <div class="w-full sm:w-1/2">
+                <h2 class="text-lg text-red-600">Hi. I’m Ryan,</h2>
 
-            <h3>I’ll be your coder for today.</h3>
+                <h3 class="text-4xl">I’ll be your coder for today.</h3>
 
-            <p>
-                I’m a motivated software developer with experience across a range of languages and development
-                platforms. I’ve written in C++, T-SQL, Javascript, C# and VB.NET [brain damage included].
-
-            </p>
-            <p>
-                I’ve been lucky enough to work with the biggest names in Australian Game Development and now I’m a Game
-                Development contractor and co-founder of Spud Spicer.
-            </p>
+                <p>
+                    I’m a motivated software developer with experience across a range of languages and development
+                    platforms. I’ve written in C++, T-SQL, Javascript, C# and VB.NET [brain damage included].
+                </p>
+                <p>
+                    I’ve been lucky enough to work with the biggest names in Australian Game Development and now I’m a
+                    Game
+                    Development contractor and co-founder of Spud Spicer.
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <h2>View my work</h2>
-            <a href="/work" class="btn">See all</a>
+        <div class="flex justify-between mx-48 py-16">
+            <h2 class="inline-flex text-gray-700 mb-0">View my work</h2>
+            <a href="/work" class="btn btn-red">See all</a>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
+        <div class="mx-64 py-16 text-center">
             <h2>I'm at my best in small teams.</h2>
             <p>
                 I’m first and foremost a team player. I’m at my best when I work in small close-knit teams. I’m very
@@ -55,88 +54,108 @@
                 they can, every day.
             </p>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <div class="icon lightning"></div>
-            <h3>Skills</h3>
-            <p class="description">
-                My skills are built upon a bedrock of C++ Game Development training. I spent several years in an
-                enterprise software development role where I learned C# and VB.NET and T-SQL. I returned to video games
-                and worked with League of Geeks, Many Monkeys and Mighty Games Group, where I developed my expertise in
-                Unity under the titans of the Australian Video Games industry.
-            </p>
+        <div class="flex justify-between -mx-4 py-16">
+            <div class="skill-point">
+                <div class="icon">
+                    <div class="jam jam-tools"></div>
+                </div>
+                <h3>Skills</h3>
+                <p>
+                    My skills are built upon a bedrock of C++ Game Development training. I spent several years in an
+                    enterprise software development role where I learned C# and VB.NET and T-SQL. I returned to video
+                    games
+                    and worked with League of Geeks, Many Monkeys and Mighty Games Group, where I developed my expertise
+                    in
+                    Unity under the titans of the Australian Video Games industry.
+                </p>
+            </div>
+            <div class="skill-point">
+                <div class="icon">
+                    <div class="jam jam-gamepad"></div>
+                </div>
+                <h3>Projects</h3>
+                <p>
+                    After leaving my enterprise development role, I joined the League of Geeks in their earliest days of
+                    developing Armello. I transitioned to Many Monkeys where I was privileged to work on the award
+                    winning
+                    game Breath of Light, then moved laterally to Mighty Games where I was involved with Shooty Skies
+                    and
+                    Disney Crossy Road.
+                </p>
+            </div>
+            <div class="skill-point">
+                <div class="icon">
+                    <div class="jam jam-terminal"></div>
+                </div>
+                <h3>Software</h3>
+                <p>
+                    I enjoy developing systems that are flexible, open to change, fast and stable. When I can avoid it
+                    (which is almost always) I’m not the guy that ‘hacks it in’. I always try to balance flexibility and
+                    modularity with the short term needs of the project. When I touch something for the second time, I
+                    want
+                    the next feature to be clean and easy.
+                </p>
+            </div>
         </div>
-        <div class="col">
-            <div class="icon window"></div>
-            <h3>Projects</h3>
-            <p class="description">
-                After leaving my enterprise development role, I joined the League of Geeks in their earliest days of
-                developing Armello. I transitioned to Many Monkeys where I was privileged to work on the award winning
-                game Breath of Light, then moved laterally to Mighty Games where I was involved with Shooty Skies and
-                Disney Crossy Road.
-            </p>
-        </div>
-        <div class="col">
-            <div class="icon computer"></div>
-            <h3>Software</h3>
-            <p class="description">
-                I enjoy developing systems that are flexible, open to change, fast and stable. When I can avoid it
-                (which is almost always) I’m not the guy that ‘hacks it in’. I always try to balance flexibility and
-                modularity with the short term needs of the project. When I touch something for the second time, I want
-                the next feature to be clean and easy.
-            </p>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <h2>Who I have worked with</h2>
+        <div class="flex flex-wrap py-16">
+            <div class="w-full text-center">
+                <h2>Who I have worked with</h2>
+            </div>
+            <div class="company-logo">
+                <img src="assets/league-of-geeks-grey-logo.jpg" alt="League of Geeks logo">
+            </div>
+            <div class="company-logo">
+                <img src="assets/mighty-games-grey-logo.jpg" alt="Mighty Games logo">
+            </div>
+            <div class="company-logo">
+                <img src="assets/many-monkeys-grey-logo.jpg" alt="Many Monkeys logo">
+            </div>
+            <div class="company-logo">
+                <img src="assets/spudspicer-grey-logo.jpg" alt="Spud Spicer logo">
+            </div>
+            <div class="company-logo">
+                <img src="assets/millipede-logo.jpg" alt="Millipede logo">
+            </div>
+            <div class="company-logo">
+                <img src="assets/computer-share-grey-logo.jpeg" alt="Computershare logo">
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col col-4">
-            <img src="/assets/" alt="League of Geeks logo">
+    <footer class="bg-gray-900">
+        <div class="container mx-auto py-16 text-center">
+            <h2>Let's Connect</h2>
+            <ul class="mb-4">
+                <li class="inline text-3xl mx-2">
+                    <a href="https://twitter.com/ryanmurphy_dev" title="@ryanmurphy_dev on Twitter">
+                        <span class="jam jam-twitter"></span>
+                    </a>
+                </li>
+                <li class="inline text-3xl mx-2">
+                    <a href="https://www.facebook.com/ryanscottmurphy" title="Facebook">
+                        <span class="jam jam-facebook"></span>
+                    </a>
+                </li>
+                <li class="inline text-3xl mx-2">
+                    <a href="https://github.com/ryanscottmurphy" title="Github">
+                        <span class="jam jam-github"></span>
+                    </a>
+                </li>
+                <li class="inline text-3xl mx-2">
+                    <a href="https://www.linkedin.com/in/ryanscottmurphy/" title="LinkedIn">
+                        <span class="jam jam-linkedin"></span>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Melbourne, Australia
+                <br>
+                <a href="mailto:mail@ryanscottmurphy.com" class="text-red-500">mail@ryanscottmurphy.com</a>
+            </p>
+            <span class="text-xs">Copyright &copy; 2019 Ryan Scott Murphy. All Rights Reserved.</span>
         </div>
-        <div class="col col-4">
-            <img src="/assets/" alt="Mighty Games logo">
-        </div>
-        <div class="col col-4">
-            <img src="/assets/" alt="Many Monkeys logo">
-        </div>
-        <div class="col col-4">
-            <img src="/assets/" alt="Spud Spicer logo">
-        </div>
-        <div class="col col-4">
-            <img src="/assets/" alt="Millipede logo">
-        </div>
-        <div class="col col-4">
-            <img src="/assets/" alt="Computershare logo">
-        </div>
-    </div>
+    </footer>
 </div>
-<footer>
-    <h2>Let's Connect</h2>
-    <ul>
-        <li>
-            <a href="https://twitter.com/ryanmurphy_dev" class="social-icon twitter">@ryanmurphy_dev on Twitter</a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/ryanscottmurphy" class="social-icon facebook">Facebook</a>
-        </li>
-        <li>
-            <a href="https://github.com/ryanscottmurphy" class="social-icon github">Github</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/ryanscottmurphy/" class="social-icon linkedin">LinkedIn</a>
-        </li>
-    </ul>
-    <p>Melbourne, Australia</p>
-    <p>
-        <a href="mailto:mail@ryanscottmurphy.com">mail@ryanscottmurphy.com</a>
-    </p>
-    <span>Copyright &copy; 2019 Ryan Scott Murphy. All Rights Reserved.</span>
-</footer>
 </body>
 </html>

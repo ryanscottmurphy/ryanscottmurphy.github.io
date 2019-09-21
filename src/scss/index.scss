@@ -1,0 +1,74 @@
+@tailwind base;
+
+@import "base";
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600|Montserrat:400,500,600&display=swap');
+
+.wrapper {
+  max-width: 1920px
+}
+
+.skill-point {
+  @apply w-full mx-4;
+
+  @screen md {
+    @apply w-1/3;
+  }
+
+  .icon {
+    @apply flex mx-auto mb-4 rounded-full w-24 h-24 bg-red-600;
+    @apply text-5xl text-white justify-center items-center;
+  }
+
+  h3 {
+    @apply text-center;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+.company-logo {
+  @apply w-1/2;
+
+  @screen md {
+    @apply w-1/3;
+  }
+}
+
+.btn {
+  @apply inline-flex w-auto px-8 py-4 rounded font-display uppercase ;
+  transition: top 50ms linear;
+  position: relative;
+  top: 0;
+
+
+  &.btn-red {
+    @apply bg-red-600 text-white;
+
+    &:hover {
+      top: -2px;
+    }
+    &:active {
+      top: 1px;
+    }
+  }
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  overflow: visible;
+}
+
+footer {
+  h2, p, span {
+    @apply text-white;
+  }
+}
