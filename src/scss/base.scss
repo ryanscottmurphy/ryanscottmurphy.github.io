@@ -6,7 +6,7 @@ h1 {
   @apply text-4xl mb-3 font-bold;
 }
 h2 {
-  @apply text-4xl;
+  @apply text-3xl;
 }
 h3 {
   @apply text-2xl;
@@ -15,10 +15,6 @@ h4, h5 {
   @apply text-xl;
 }
 
-p, span {
-  @apply font-body text-gray-800;
-}
-
 p {
-  @apply mb-2;
+  @apply font-body text-gray-800 leading-relaxed mb-2;
 }

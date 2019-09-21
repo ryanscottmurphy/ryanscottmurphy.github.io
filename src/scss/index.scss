@@ -12,11 +12,18 @@
   max-width: 1920px
 }
 
+.row {
+  @apply flex py-16;
+}
+
 .skill-point {
-  @apply w-full mx-4;
+  @apply w-full mb-8;
 
   @screen md {
-    @apply w-1/3;
+    @apply w-2/3 mx-auto;
+  }
+  @screen lg {
+    @apply w-1/3 mx-4;
   }
 
   .icon {
@@ -26,9 +33,6 @@
 
   h3 {
     @apply text-center;
-  }
-  p {
-    @apply leading-relaxed;
   }
 }
 
@@ -41,11 +45,14 @@
 }
 
 .btn {
-  @apply inline-flex w-auto px-8 py-4 rounded font-display uppercase ;
+  @apply block w-2/3 mx-auto px-8 py-4 rounded font-display text-center uppercase;
   transition: top 50ms linear;
   position: relative;
   top: 0;
 
+  @screen md {
+    @apply inline-flex w-auto mx-0;
+  }
 
   &.btn-red {
     @apply bg-red-600 text-white;
