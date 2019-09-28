@@ -5,7 +5,7 @@ module.exports = {
     mode: process.env.NODE_ENV,
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, '_sass')
+        path: path.resolve(__dirname, 'dist')
     },
 
     plugins: [
