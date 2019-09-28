@@ -5,14 +5,14 @@ module.exports = {
     mode: process.env.NODE_ENV,
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'assets')
     },
 
     plugins: [
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // all options are optional
-            filename: '[name].css',
+            filename: 'styles.css',
             chunkFilename: '[id].css',
             ignoreOrder: false, // Enable to remove warnings about conflicting order
         }),
