@@ -2,33 +2,106 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<div class="video">
+    <iframe class="absolute w-full h-full"
+            src="https://www.youtube.com/embed/JHzjAvZIPA0?rel=0&controls=0&modestbranding=1"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+</div>
 
-  {{ content }}
+<div class="home container mx-auto overflow-hidden px-6" aria-label="Content">
+  <div class="row">
+    <div class="w-full md:w-2/3 md:mx-auto lg:w-1/2 lg:mx-0">
+      <h2>
+        <span class="text-lg text-red-600 font-display">Hi. I’m Ryan,</span><br>
+        I’ll be your coder for&nbsp;today.
+      </h2>
+      <p>
+        I’m a motivated software developer with experience across a range of languages and development
+        platforms. I’ve written in C++, T-SQL, Javascript, C# and VB.NET [brain damage included].
+      </p>
+      <p>
+        I’ve been lucky enough to work with the biggest names in Australian Game Development and now I’m a
+        Game Development contractor and co-founder of Spud Spicer.
+      </p>
+    </div>
+  </div>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  <div class="row flex-col justify-center items-center md:flex-row md:justify-between md:w-2/3 md:mx-auto lg:w-1/2">
+    <h2 class="inline-flex text-gray-700 mb-4 md:mb-0">View my work</h2>
+    <a href="/portfolio" class="btn btn-red">See all</a>
+  </div>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  <div class="md:w-2/3 md:mx-auto lg:w-1/2 py-16">
+    <h2>I'm at my best in small&nbsp;teams.</h2>
+    <p>
+      I’m first and foremost a team player. I’m at my best when I work in small close-knit teams. I’m very
+      passionate about developing solutions that grant others the flexibility to be as creative as possible. I
+      derive a lot of satisfaction from knowing that my code empowers my team mates to do the best work that
+      they can, every day.
+    </p>
+  </div>
 
+  <div class="row flex-col lg:flex-row justify-between lg:-mx-4">
+    <div class="skill-point">
+      <div class="icon">
+        <div class="jam jam-tools"></div>
+      </div>
+      <h3>Skills</h3>
+      <p>
+        My skills are built upon a bedrock of C++ Game Development training. I spent several years in an
+        enterprise software development role where I learned C# and VB.NET and T-SQL. I returned to video
+        games and worked with League of Geeks, Many Monkeys and Mighty Games Group, where I developed my
+        expertise in Unity under the titans of the Australian Video Games industry.
+      </p>
+    </div>
+    <div class="skill-point">
+      <div class="icon">
+        <div class="jam jam-gamepad"></div>
+      </div>
+      <h3>Projects</h3>
+      <p>
+        After leaving my enterprise development role, I joined the League of Geeks in their earliest days of
+        developing Armello. I transitioned to Many Monkeys where I was privileged to work on the award
+        winning game Breath of Light, then moved laterally to Mighty Games where I was involved with Shooty
+        Skies and Disney Crossy Road.
+      </p>
+    </div>
+    <div class="skill-point">
+      <div class="icon">
+        <div class="jam jam-terminal"></div>
+      </div>
+      <h3>Software</h3>
+      <p>
+        I enjoy developing systems that are flexible, open to change, fast and stable. When I can avoid it
+        (which is almost always) I’m not the guy that ‘hacks it in’. I always try to balance flexibility and
+        modularity with the short term needs of the project. When I touch something for the second time, I
+        want the next feature to be clean and easy.
+      </p>
+    </div>
+  </div>
+
+  <div class="row flex-wrap">
+    <div class="w-full text-center">
+      <h2>Who I have worked with</h2>
+    </div>
+    <div class="company-logo">
+      <img src="assets/league-of-geeks-grey-logo.jpg" alt="League of Geeks logo">
+    </div>
+    <div class="company-logo">
+      <img src="assets/mighty-games-grey-logo.jpg" alt="Mighty Games logo">
+    </div>
+    <div class="company-logo">
+      <img src="assets/many-monkeys-grey-logo.jpg" alt="Many Monkeys logo">
+    </div>
+    <div class="company-logo">
+      <img src="assets/spudspicer-grey-logo.jpg" alt="Spud Spicer logo">
+    </div>
+    <div class="company-logo">
+      <img src="assets/millipede-logo.jpg" alt="Millipede logo">
+    </div>
+    <div class="company-logo">
+      <img src="assets/computer-share-grey-logo.jpeg" alt="Computershare logo">
+    </div>
+  </div>
 </div>
